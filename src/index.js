@@ -1,10 +1,17 @@
 import './style.scss'
 
-import React from 'react';
+import React from 'react'
 import ReactDOM from 'react-dom'
 
-const title = 'React with Webpack and Babel'
+const Title = () => (
+  <div style={{ fontSize: 20, color: 'red' }}>
+    Ey,
+  </div>
+)
+
 ReactDOM.render(
-  <div>{title}</div>,
-  document.getElementById('app')
+  <div>
+    <Title/>
+  </div>,
+  window.document.getElementById('app')
 )
