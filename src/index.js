@@ -1,17 +1,15 @@
-import './style.scss'
+import './style.scss';
 
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Test from './Test';
 
-const Title = () => (
-  <div style={{ fontSize: 20, color: 'red' }}>
-    Ey,
-  </div>
-)
+const Title = () => <div>Ey</div>;
 
 ReactDOM.render(
   <div>
-    <Title/>
+    <Title />
+    <Test name={5} />
   </div>,
   window.document.getElementById('app')
-)
+);
